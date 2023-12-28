@@ -1,0 +1,60 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    animation: transitionIn 0.75s;
+    text-align: center;
+    position: relative;
+    transition: 0.3s;
+}
+
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+img{
+    width: 800px;
+    height: auto;
+    display: block;
+    position: fixed;
+    top: 35%; /* Center the image vertically */
+    left: 50%; /* Center the image horizontally */
+    transform: translate(-50%, -50%);
+}
+
+
+button{
+    font-weight: 800;
+    font-size: 60;
+    background-color: transparent;
+    border: transparent;
+    border-radius: 2px;
+    color: black;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: fixed;
+    top: 55%; /* Center the image vertically */
+    left: 50%; /* Center the image horizontally */
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+
+button:hover{background-color: rgba(128, 128, 128, 0.56)}
+
+
+@media only screen and (min-width: 1000px){
+    img{
+        width: 50%;
+    }
+
+    button{
+        font-size: 30;
+    }
+}
